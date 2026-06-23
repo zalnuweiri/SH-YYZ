@@ -120,17 +120,17 @@ export default function Home() {
               <Reveal>
                 <div className="flex flex-col items-start gap-[2.5vw]">
                   {/* Mondwest Bold 64px ls4.48 lh64 → text 5vw, ls 0.35vw, leading-1 */}
-                  <h1 className={`${T.hero} text-sh-cream leading-[1]`}>
+                  <h1 className={`${T.hero} text-sh-cream leading-[1] font-bold`}>
                     Mexican flavours, refined
                   </h1>
                   {/* Desktop/Subtitle (NeueBit 22, ls 20%) */}
-                  <p className={`w-full ${T.subtitle} text-sh-cream leading-[1.2]`}>
+                  <p className={`w-full ${T.subtitle} text-sh-cream leading-[1.2] font-bold`}>
                     A vibrant blend of tradition and modern edge, where bold personalities gather.
                     Chef Gerardo brings Mexico&apos;s street flavours to Toronto. Elevated, authentic,
                     and made to keep you coming back.
                   </p>
                   {/* SecondaryButton 216×48 r4 → 16.875vw × 3.75vw */}
-                  <OutlineButton onClick={() => setShowWidget(true)} size="w-[16.875vw] h-[3.75vw]">
+                  <OutlineButton onClick={() => setShowWidget(true)} size="w-[16.875vw] h-[3.75vw] font-bold">
                     Book Your Experience
                   </OutlineButton>
                 </div>
@@ -149,17 +149,17 @@ export default function Home() {
             {/* spacer pushes the copy to .fig y528 (=134vw), scaling with the graphic */}
             <div aria-hidden className="h-[134vw]" />
             <Reveal className="relative w-full max-w-[321px] mx-auto flex flex-col items-start">
-              <h1 className="font-display font-bold uppercase text-sh-cream text-[40px] leading-[1] tracking-[0.05em]">
+              <h1 className="font-display font-bold uppercase text-sh-cream text-[40px] leading-[1] tracking-[0.05em] font-bold">
                 Mexican flavours, refined
               </h1>
               {/* NeueBit REGULAR (not bold), ls12.5%. mt-5 sits it closer to the heading (was a
                   32px gap); leading-1.3 for the reference's slightly looser line spacing. */}
-              <p className="mt-2 font-body text-sh-cream text-[18px] leading-[1.3] tracking-[0.125em]">
+              <p className="mt-2 font-body text-sh-cream text-[18px] leading-[1.3] tracking-[0.125em] font-bold">
                 A vibrant blend of tradition and modern edge, where bold personalities gather.
                 Chef Gerardo brings Mexico&apos;s street flavours to Toronto. Elevated, authentic,
                 and made to keep you coming back.
               </p>
-              <button onClick={() => setShowWidget(true)} className="mt-8 inline-flex items-center justify-center rounded-[4px] border border-sh-cream font-body uppercase text-sh-cream text-[16px] tracking-[0.1em] w-[216px] h-[48px] hover:bg-sh-cream hover:text-sh-black transition-colors">
+              <button onClick={() => setShowWidget(true)} className="mt-8 inline-flex items-center justify-center rounded-[4px] border border-sh-cream font-body uppercase text-sh-cream text-[16px] tracking-[0.1em] w-[216px] h-[48px] hover:bg-sh-cream hover:text-sh-black transition-colors font-bold">
                 Book Your Experience
               </button>
             </Reveal>
@@ -176,7 +176,7 @@ export default function Home() {
           <div className="hidden md:flex w-[73.91vw] mx-auto flex-col items-center gap-[2.5vw]">
             <Reveal className="flex flex-col items-center gap-[2.5vw] w-full">
               {/* Mondwest Bold 28px ls1.96 lh33.6 → 2.1875vw / 0.153vw */}
-              <h2 className={`${T.h1} uppercase text-sh-cream text-center leading-[1.2]`}>
+              <h2 className={`${T.h1} uppercase text-sh-cream text-center leading-[1.2] font-bold`}>
                 Menú excepcional
               </h2>
               {/* Desktop/Body (NeueBit 22, ls 10%) */}
@@ -218,7 +218,7 @@ export default function Home() {
             </div>
 
             {/* SecondaryButton "Explore the Menu" 184×48 → 14.375vw × 3.75vw, centered */}
-            <OutlineButton to="/menu" size="w-[14.375vw] h-[3.75vw]">
+            <OutlineButton to="/menu" size="w-[14.375vw] h-[3.75vw] font-bold">
               Explore the Menu
             </OutlineButton>
           </div>
