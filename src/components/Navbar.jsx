@@ -68,7 +68,7 @@ export default function Navbar() {
         <header className="fixed top-0 inset-x-0 z-50 flex justify-center pointer-events-none">
             {/* Desktop centered pill — @(408,40), so top = 40px = 3.125vw.
                 Pill 464×67 with inner 424-wide item row, gap 12px = 0.94vw, h 67px = 5.23vw. */}
-            <nav className="pointer-events-auto hidden md:flex items-center justify-center gap-[0.94vw] rounded-full bg-black/40 backdrop-blur-[10px] mt-[3.125vw] h-[5.23vw] px-[1.56vw] shadow-xl shadow-black/30">
+            <nav className="font-bold pointer-events-auto hidden md:flex items-center justify-center gap-[0.94vw] rounded-full bg-black/40 backdrop-blur-[10px] mt-[3.125vw] h-[5.23vw] px-[1.56vw] shadow-xl shadow-black/30">
                 {/* MENU (50w) */}
                 <NavItem to="/menu">Menu</NavItem>
                 {/* HAPPY HOUR (98w) */}
