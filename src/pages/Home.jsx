@@ -174,7 +174,7 @@ export default function Home() {
         <section className="relative w-full">
           {/* Desktop exact composition (vw). Section width 946 @x167 → centered 73.91vw. */}
           <div className="hidden md:flex w-[73.91vw] mx-auto flex-col items-center gap-[2.5vw]">
-            <Reveal className="flex flex-col items-center gap-[2.5vw] w-full">
+            <Reveal className="flex flex-col items-center gap-[2.1vw] w-full">
               {/* Mondwest Bold 28px ls1.96 lh33.6 → 2.1875vw / 0.153vw */}
               <h2 className={`${T.h1} uppercase text-sh-cream text-center leading-[1.2] font-bold`}>
                 Menú excepcional
