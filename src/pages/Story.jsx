@@ -61,9 +61,9 @@ export default function Story() {
           </Parallax>
           <div className="pointer-events-none absolute inset-0 bg-black/55" />
           <div className="relative z-10 flex h-full flex-col items-start justify-center px-6 md:px-20">
-            <ArchDecoration className="text-sh-gold mb-6 opacity-70" width={140} />
-            <h1 className="font-display text-[40px] md:text-hero font-bold leading-[1] tracking-[2px] md:tracking-[6px] text-sh-cream">
-              The soul of <br /> México, <br /> reimagined
+            {/*<ArchDecoration className="text-sh-gold mb-6 opacity-70" width={140} />*/}
+            <h1 className="font-display w-screen text-[40px] md:text-hero font-bold leading-[1] tracking-[2px] md:tracking-[6px] text-sh-cream">
+              The soul of México, <br /> reimagined
             </h1>
           </div>
         </section>
