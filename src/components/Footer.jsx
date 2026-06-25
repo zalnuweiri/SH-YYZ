@@ -117,18 +117,18 @@ export default function Footer() {
                             leading-[0.5] makes each box hug the uppercase cap-height like Figma. */}
                         <div className="flex flex-col items-start gap-[0.94vw]">
                             {QUICK_LINKS.map((l) => (
-                                <Link key={l.to} to={l.to} className={`${T.caption} uppercase text-sh-cream leading-[0.5] hover:text-sh-pink transition-colors`}>
+                                <Link key={l.to} to={l.to} className={`${T.caption} uppercase text-sh-cream leading-[0.5] hover:text-sh-pink transition-colors font-bold`}>
                                     {l.label}
                                 </Link>
                             ))}
-                            <button onClick={() => setShowWidget(true)} className={`${T.caption} uppercase text-sh-cream leading-[0.5] hover:text-sh-pink transition-colors text-left`}>
+                            <button onClick={() => setShowWidget(true)} className={`${T.caption} uppercase text-sh-cream leading-[0.5] hover:text-sh-pink transition-colors text-left font-bold`}>
                                 reserve a table
                             </button>
                         </div>
                     </div>
 
                     {/* Address @(339,551) → NeueBit Bold 16px ls3.2 UPPER, 229 wide = 17.89vw */}
-                    <p className={`w-[17.89vw] ${T.caption} uppercase text-sh-cream leading-[1.2]`}>
+                    <p className={`w-[17.89vw] ${T.caption} uppercase text-sh-cream leading-[1.2] font-bold`}>
                         <a href="https://www.google.com/maps/place/?q=place_id:ChIJg4KPc3Y1K4gR91c0-HfMgsI" target="_blank" rel="noopener noreferrer" className="hover:text-sh-pink transition-colors">461 King St. W</a>
                         {" | "}
                         <a href="tel:+14169003535" className="hover:text-sh-pink transition-colors">416 900 3535</a>
@@ -147,7 +147,7 @@ export default function Footer() {
                         >
                             <img src="/redesign/fig-google-maps-logo-1-1.png" alt="" className="w-[1.875vw] h-[2.58vw] object-cover" />
                             {/* NeueBit Bold 16px UPPER → 1.25vw */}
-                            <span className={`${T.button} uppercase text-sh-cream`}>find us on google maps</span>
+                            <span className={`${T.button} uppercase text-sh-cream font-bold`}>find us on google maps</span>
                         </a>
                         {/* Embedded map (restored). pointer-events-none so it never grabs the scroll;
                             the wrapping link opens Google Maps. */}
@@ -171,13 +171,13 @@ export default function Footer() {
                 {/* Frame 1654 @(940,507) 270×145 → left 73.44vw, top 39.61vw, w 21.09vw, gap40 = 3.125vw */}
                 <div className="absolute left-[73.44vw] top-[39.61vw] w-[21.09vw] flex flex-col items-center gap-[3.125vw]">
                     {/* Pink SecondaryButton 270×48 → full width × 3.75vw */}
-                    <MailingButton sizing="w-full h-[3.75vw] text-[round(1.25vw,1px)]" onOpen={() => setShowForm(true)}>
-                        Join our mailing communitie
+                    <MailingButton sizing="w-full h-[3.75vw] text-[round(1.25vw,1px)] font-bold tracking-[1.6px]" onOpen={() => setShowForm(true)}>
+                        Join our mailing community
                     </MailingButton>
                     {/* Frame 1592 219×57 black r4 → w 17.11vw, h 4.45vw, gap12 = 0.94vw */}
                     <div className="w-[17.11vw] h-[4.45vw] rounded-[4px] bg-sh-ink flex flex-col items-center justify-center gap-[0.94vw]">
                         {/* "RECOMENDED ON" green #00eb5b NeueBit Bold 22px → 1.72vw */}
-                        <span className={`${T.subtitle} text-[#00eb5b] leading-[1]`}>RECOMENDED ON</span>
+                        <span className={`${T.subtitle} text-[#00eb5b] leading-[1]`}>RECOMMENDED ON</span>
                         {/* Tripadvisor logo 150×23 → 11.72vw × 1.8vw (explicit height reserves the space) */}
                         <RecommendedBadge
                             imgClassName="w-[11.72vw] h-[1.8vw] object-contain"

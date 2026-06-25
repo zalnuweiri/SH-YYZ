@@ -309,7 +309,7 @@ export default function Home() {
                   October 31st and receive a $100 gift card. Terms apply.
                 </p>
                 {/* SecondaryButton 164×48 → 12.81vw × 3.75vw */}
-                <OutlineButton to="/events" size="w-[12.81vw] h-[3.75vw]">
+                <OutlineButton to="/events" size="w-[12.81vw] h-[3.75vw] font-bold">
                   Start planning
                 </OutlineButton>
               </div>
@@ -471,7 +471,7 @@ export default function Home() {
                   baked line width 400.8px ≈ Bold 398.8, not Regular 387.) Explicit breaks at the
                   reference's points: "México" is a knife-edge wrap (466px vs 463 box) that natural
                   wrap flip-flops per viewport, so force it after "to" to match Figma at all widths. */}
-              <p className={`absolute top-[5.78vw] w-full ${T.subtitle} text-sh-cream leading-[1]`}>
+              <p className={`absolute top-[5.78vw] w-full ${T.subtitle} text-sh-cream leading-[1] font-bold`}>
                 which is reflected in every dish on this<br />menu. It is a tribute to my family, to<br />México and to my culture.&rdquo;
               </p>
               {/* Chef — NeueBit Regular @ y2883, 22px (1.72vw), ls 10%. DIMMED to ~0.6 opacity:
@@ -484,7 +484,7 @@ export default function Home() {
               {/* SecondaryButton @ y2926 (top 15.94vw), 306×51 → 23.91vw × 3.98vw */}
               <Link
                 to="/story"
-                className="absolute top-[15.94vw] inline-flex items-center justify-center rounded-[4px] border border-sh-cream/70 font-body uppercase text-sh-cream text-[round(1.71875vw,1px)] tracking-[0.2em] w-[23.91vw] h-[3.98vw] transition-colors duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:text-sh-pink"
+                className="absolute top-[15.94vw] inline-flex items-center justify-center rounded-[4px] border border-sh-cream/70 font-body font-bold uppercase text-sh-cream text-[round(1.71875vw,1px)] tracking-[0.2em] w-[23.91vw] h-[3.98vw] transition-colors duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:text-sh-pink"
               >
                 A taste of our story
               </Link>
