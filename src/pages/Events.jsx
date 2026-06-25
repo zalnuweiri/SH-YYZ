@@ -111,8 +111,8 @@ export default function Events() {
             <div className="absolute inset-0 bg-gradient-to-t from-sh-black via-sh-black/30 to-transparent" />
             <div className="absolute left-[5.47vw] bottom-[5.2vw] w-[66.4vw] flex flex-col items-start gap-[2.5vw]">
               <Reveal><h1 className={D.hero}>Plan your auténtica celebración</h1></Reveal>
-              <Reveal delay={0.1}><p className={`${D.body} max-w-[66.4vw]`}>{heroIntro}</p></Reveal>
-              <Reveal delay={0.2}><Button variant="ghost" className="!font-normal" as="a" href={PLAN_URL} target="_blank" rel="noopener noreferrer">Start Planning</Button></Reveal>
+              <Reveal delay={0.1}><p className={`${D.body} max-w-[66.4vw] font-bold`}>{heroIntro}</p></Reveal>
+              <Reveal delay={0.2}><Button variant="ghost" className="font-bold" as="a" href={PLAN_URL} target="_blank" rel="noopener noreferrer">Start Planning</Button></Reveal>
             </div>
           </section>
 
@@ -161,7 +161,7 @@ export default function Events() {
           {/* CTA */}
           <Reveal className="mt-[7.5vw] mb-[6.25vw] mx-auto w-[73.75vw] flex flex-col items-center gap-[3.125vw] text-center">
             <p className={`${D.cta} max-w-[73.75vw]`}>{"Let us transform your event into an unforgettable culinary experience."}</p>
-            <Button variant="ghost" className="!font-normal" as="a" href={PLAN_URL} target="_blank" rel="noopener noreferrer">Start Planning</Button>
+            <Button variant="ghost" className="font-bold" as="a" href={PLAN_URL} target="_blank" rel="noopener noreferrer">Start Planning</Button>
           </Reveal>
         </div>
         )}
@@ -185,7 +185,7 @@ export default function Events() {
               <Reveal><h1 className={M.hero}>Plan your auténtica celebración</h1></Reveal>
               <Reveal delay={0.1}><p className={M.heroBody}>{heroIntroM[0]}<br />{heroIntroM[1]}</p></Reveal>
               {/* Figma SecondaryButton = 164×48; h-[48px] matches (default ghost box is ~42 tall) */}
-              <Reveal delay={0.2}><Button variant="ghost" className="!font-normal h-[48px] rounded-[4px]" as="a" href={PLAN_URL} target="_blank" rel="noopener noreferrer">Start Planning</Button></Reveal>
+              <Reveal delay={0.2}><Button variant="ghost" className="!font-normal h-[48px] rounded-[4px] font-bold" as="a" href={PLAN_URL} target="_blank" rel="noopener noreferrer">Start Planning</Button></Reveal>
             </div>
           </section>
 
@@ -236,7 +236,7 @@ export default function Events() {
               CTA = Monoglyphic Extralight (Mobile/H3). Button = Figma SecondaryButton 164×48 (h-[48px]). */}
           <Reveal className="mt-8 mb-[120px] px-[42px] flex flex-col items-start gap-10 text-left">
             <p className={M.cta}>{"Let us transform your event into an unforgettable culinary experience."}</p>
-            <Button variant="ghost" className="!font-normal h-[48px] rounded-[4px]" as="a" href={PLAN_URL} target="_blank" rel="noopener noreferrer">Start Planning</Button>
+            <Button variant="ghost" className="!font-normal h-[48px] rounded-[4px] font-bold" as="a" href={PLAN_URL} target="_blank" rel="noopener noreferrer">Start Planning</Button>
           </Reveal>
         </div>
         )}
